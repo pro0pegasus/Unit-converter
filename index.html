@@ -5,8 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Unit Converter</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="container">
+            <div class="first_section">
+                <p id="headline">Metric/Imperial Unit Conversion</p>
+                <input type="number" id="quantity" name="quantity" step="0.01" aria-label="input field, enter a number">
+                <button id="convert-button">Convert</button>
+            </div>
+            <div class="second_section">
+                <p>Length (Meter/Feet)</p>
+                <p>Volume (Liters/Gallons)</p>
+                <p>Metric/Imperial Unit Conversion</p>
+            </div>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>

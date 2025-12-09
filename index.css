@@ -1,3 +1,76 @@
 body {
-    margin: 0;
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+    width: 550px;
+    margin: auto;
+}
+
+#headline {
+    margin: 33px 0 30px 0;
+}
+
+#quantity {
+    margin-bottom: 25px;
+    width: 117px;
+    height: 83px;
+    background-color: #6943FF;
+    border: #B295FF 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 58px;
+    font-weight: 800;
+    color: white;
+}
+
+#convert-button {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    color: #3D3D3D;
+    padding: 9px 27.5px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* remove arrows in Firefox */
+  appearance: textfield;
+}
+
+.first_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #6943FF;
+    padding-bottom: 10px;
+    font-size: x-large;
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+.second_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    border: #1F2937 1px solid;
 }
