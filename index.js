@@ -7,16 +7,6 @@
 1 kilogram = 2.204 pound / pound = 0.453592 kilogram
 */
 
-/*
-create ids 
-grab btn and input id them in js
-add eventlistner for the button when it triggered 
-create functions that converts:
-Meter/Feet
-Liters/Gallons
-Metric/Imperial Unit Conversion
-*/
-
 const buttonEl = document.getElementById("convert-button")
 const inputEl = document.getElementById("quantity")
 const meterandfeetEL = document.getElementById("meterandfeet")
@@ -37,15 +27,12 @@ function checkNumberFieldLength(elem){
     }
 }
 
-
 buttonEl.addEventListener("click", function() {
     inputNumber = inputEl.value
     convertMeterFeet(inputNumber)
     convertLitersGallons(inputNumber)
     convertKilosPounds(inputNumber)
 })
-
-
 
 function convertMeterFeet(number) {
     result = number*3.28084
