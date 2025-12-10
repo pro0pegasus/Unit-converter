@@ -22,9 +22,21 @@ const inputEl = document.getElementById("quantity")
 const meterandfeetEL = document.getElementById("meterandfeet")
 const litersandgallonsEL = document.getElementById("litersandgallons")
 const kilospoundsEL = document.getElementById("kilospounds")
+const quantityEl = document.getElementById("quantity")
 let inputNumber
 let result 
 let result2 
+
+quantityEl.addEventListener("input", function() {
+    checkNumberFieldLength(quantityEl);
+});
+
+function checkNumberFieldLength(elem){
+    if (elem.value.length > 4) {
+        elem.value = elem.value.slice(0,4); 
+    }
+}
+
 
 buttonEl.addEventListener("click", function() {
     inputNumber = inputEl.value

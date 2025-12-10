@@ -42,6 +42,12 @@ body {
 }
 
 
+#convert-button:hover {
+    background-color: #B295FF;
+    cursor: pointer;
+}
+
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
