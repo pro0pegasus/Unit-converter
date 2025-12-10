@@ -25,7 +25,7 @@ body {
     border: #B295FF 2px solid;
     border-radius: 5px;
     text-align: center;
-    font-size: 58px;
+    font-size: 48px;
     font-weight: 800;
     color: white;
 }
@@ -42,8 +42,8 @@ body {
 }
 
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
@@ -94,7 +94,7 @@ input[type=number] {
     margin-top: 23.43px;
 }
 
-.Weight {
+.Mass {
     border: #273549 1px solid;
     background-color: #273549;
     width: 500px;
